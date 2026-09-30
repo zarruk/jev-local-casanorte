@@ -1,0 +1,9 @@
+SheetJS Community Edition 0.20.3
+Copyright (C) 2013-present SheetJS
+https://sheetjs.com
+https://docs.sheetjs.com/docs/
+
+public/xlsx.full.min.js se incluye sin modificar desde:
+https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js
+
+Licencia Apache 2.0: LICENSE-SheetJS.txt.
