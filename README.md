@@ -84,7 +84,7 @@ node pruebas.mjs
 
 Las 24 pruebas comprueban lectura y exportación de los tres Excel, XLS heredado, validación de resultados, errores HTTP, reintentos y streaming por HTTP local. Usan respuestas de Jev simuladas y no consumen API. La integración real requiere probar con una clave válida de TypeSafe.
 
-Se admiten XLS y XLSX de hasta 5 MB, con hasta 200 casos por pestaña. La pestaña debe caber en 1000 filas y 26 columnas, con IDs únicos. La descarga siempre es XLSX. Usa las plantillas para el demo: la conservación de macros, gráficos y otras funciones avanzadas de Excel no está cubierta.
+Se admiten XLS y XLSX de hasta 5 MB, con hasta 500 casos por pestaña. La pestaña debe caber en 1000 filas y 26 columnas, con IDs únicos. La descarga siempre es XLSX. Usa las plantillas para el demo: la conservación de macros, gráficos y otras funciones avanzadas de Excel no está cubierta.
 
 Si el puerto está ocupado, cierra la otra instancia o cambia `PORT` en `.env`. No abras `public/index.html` directamente; usa la dirección del servidor local.
 

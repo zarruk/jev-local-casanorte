@@ -1,6 +1,6 @@
 import { CONFIG } from './config.mjs';
 export const OUTPUTS=['decision_jev','probabilidad_decision'];
-export const MAX_ROWS=200;
+export const MAX_ROWS=500;
 export function detectType(headers){
  const names=headers.map(h=>String(h??'').trim());const occupied=names.filter(Boolean);
  if(new Set(occupied).size!==occupied.length)throw Error('Hay encabezados duplicados.');
@@ -26,7 +26,7 @@ export function prepareGrid(grid){
  return {type,headers,definition,records};
 }
 export function validateRequest(body){
- if(!body||!Object.hasOwn(CONFIG.casos,body.type)||!Array.isArray(body.records)||!body.records.length||body.records.length>MAX_ROWS)throw Error('Entrada inválida: máximo 200 filas de un tipo compatible.');
+ if(!body||!Object.hasOwn(CONFIG.casos,body.type)||!Array.isArray(body.records)||!body.records.length||body.records.length>MAX_ROWS)throw Error('Entrada inválida: máximo 500 filas de un tipo compatible.');
  const definition=CONFIG.casos[body.type];const ids=new Set(),rows=new Set();
  const records=body.records.map(r=>{
   if(!r||!Number.isInteger(r.row)||r.row<2||r.row>100000||rows.has(r.row)||!r.record||typeof r.record!=='object')throw Error('Fila inválida o repetida.');

@@ -58,7 +58,7 @@ Noul: si el resultado es NO, se muestra 1 menos la probabilidad de SÍ.
 En 0.5 se muestra INCIERTO y probabilidad vacía.
 
 FORMATOS Y LÍMITES
-XLS y XLSX, hasta 5 MB y 200 casos por pestaña, encabezados en fila 1.
+XLS y XLSX, hasta 5 MB y 500 casos por pestaña, encabezados en fila 1.
 La pestaña debe caber en 1000 filas y 26 columnas, con IDs únicos.
 Puedes seleccionar la pestaña si el archivo contiene varias compatibles.
 Descarga siempre XLSX. Las filas fallidas o pendientes quedan sin decisión
